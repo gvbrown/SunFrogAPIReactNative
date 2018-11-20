@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import SunFrogAPI from './src/SunFrogAPI';
-import OrderItem from './src/OrderItem'; 
+import SunFrogAPI from '../src/SunFrogAPI';
+import OrderItem from '../src/OrderItem'; 
 
 export default class CreateSignupExample extends React.Component {
 
