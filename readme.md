@@ -36,6 +36,24 @@ communicating with the API.
 Generic method to communicate with the API.  This is abstracted and used for most of the functions
 within the SunFrogAPI object.  Can be used include other calls not included with this library.  
 
+**startBatch()** - Opens a new batch for placing orders. 
+
+**clearBatch( batchid )** - Clears (erases and closes) an existing open batch. 
+
+**finalizeBatch( batchid)** - Signals that the batch is ready to be closed, and finalizes pricing. 
+
+**endBatch( batchid )** - Ends a batch and sends included orders to production. 
+
+**getOrderStatus( orderid, email )** - Gets the current production status of an order and shipping / tracking information if available. 
+
+**createSignup( name, email, password, company, address, city, state, zipcode, country)** - creates a new sub account for interacting with the API.  
+
+**createMockup( mockupObj )** - Creates a new mockup (group) under which product variants can be added. 
+
+**createMockupVariant( MockupObj )** - creates a variant for an existing product group. 
+
+**addOrder(batchid, email, name, address1, address2, city, state, shippingZipCode, country, memo, orderItems)** - Adds an order and order items to an open batch. 
+
 
 ## License
 
